@@ -68,15 +68,9 @@ h3 a:hover { color: var(--blue); }
 .equal-contribution { color: var(--muted); font-size: 11px; margin-top: 4px; }
 .paper-summary { color: var(--body); font-size: 13px; line-height: 1.8; margin-top: 13px; }
 .paper-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 19px; }
-.paper-actions a, .paper-actions button { display: inline-flex; align-items: center; justify-content: center; gap: 7px; padding: 5px 11px; min-height: 32px; border: 1px solid #dce2eb; border-radius: 5px; background: white; color: var(--body); font-size: 11px; font-weight: 500; line-height: 1.5; }
-.paper-actions a:hover, .paper-actions button:hover, .paper-actions button[aria-expanded="true"] { color: var(--blue); border-color: #aabedc; background: #f5f8fd; text-decoration: none; }
+.paper-actions a { display: inline-flex; align-items: center; justify-content: center; gap: 7px; padding: 5px 11px; min-height: 32px; border: 1px solid #dce2eb; border-radius: 5px; background: white; color: var(--body); font-size: 11px; font-weight: 500; line-height: 1.5; }
+.paper-actions a:hover { color: var(--blue); border-color: #aabedc; background: #f5f8fd; text-decoration: none; }
 .paper-actions svg { width: 13px; height: 13px; }
-.citation { grid-column: 1 / -1; margin-top: 24px; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: #f8fafc; }
-.citation-heading { display: flex; align-items: center; justify-content: space-between; padding: 10px 16px; border-bottom: 1px solid var(--line); font-size: 12px; }
-.citation-heading button { border: 0; background: transparent; color: var(--blue); font-size: 12px; padding: 4px 8px; }
-pre { padding: 16px; margin: 0; overflow-x: auto; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 11px; line-height: 1.7; color: var(--body); }
-.copy-status { font-size: 12px; padding: 0 16px 12px; }
-.copy-status:empty { display: none; }
 .news { border-top: 1px solid var(--line); padding: 28px 0 38px; display: grid; grid-template-columns: 150px 1fr; gap: 30px; align-items: baseline; }
 .news h2 { font-size: 18px; letter-spacing: -.4px; }
 .news-entry { display: flex; gap: 28px; font-size: 13px; }
@@ -123,7 +117,7 @@ body:has(dialog[open]) { overflow: hidden; }
   h3 { font-size: 20px; }
   .authors { font-size: 13px; }
   .paper-summary { font-size: 14px; }
-  .paper-actions a, .paper-actions button { font-size: 12px; padding: 7px 13px; min-height: 36px; }
+  .paper-actions a { font-size: 12px; padding: 7px 13px; min-height: 36px; }
   .preview-toggle, .expand-video { width: 34px; height: 34px; }
   .section-heading { margin-bottom: 24px; }
   .news { grid-template-columns: 1fr; gap: 18px; }

@@ -8,7 +8,7 @@ Static HTML, CSS, and JavaScript. GitHub Pages deploys the root of `main`.
 
 - `index.html`: biography, publication, news, and contact links
 - `style.css`: typography and responsive layouts
-- `script.js`: video playback, expanded player, and citation copy
+- `script.js`: video playback and expanded player
 - `assets/`: portrait, paper overview, demonstration video, and video poster
 
 Preview: `python3 -m http.server 8000` and open http://localhost:8000.
