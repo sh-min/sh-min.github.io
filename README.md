@@ -1,22 +1,23 @@
-# Sunhong Min — Portfolio
+# Sunhong Min
 
-Personal portfolio: https://sh-min.github.io/
+Academic homepage: https://sh-min.github.io/
 
-Static HTML/CSS, deployed by GitHub Pages from the root of `main`.
+Static HTML, CSS, and JavaScript. GitHub Pages deploys the root of `main`.
 
-- `index.html`: profile, projects, links
-- `style.css`: colors, layout, responsive styles
-- `favicon.svg`: browser icon
+## Edit
 
-Preview locally: `python3 -m http.server 8000`, then open http://localhost:8000.
+- `index.html`: biography, publication, news, and contact links
+- `style.css`: typography and responsive layouts
+- `script.js`: video playback, expanded player, and citation copy
+- `assets/`: portrait, paper overview, demonstration video, and video poster
 
-Only public GitHub profile and public repository information is included.
+Preview: `python3 -m http.server 8000` and open http://localhost:8000.
 
-## Design and research media
+## Content sources
 
-The compact academic layout is inspired by https://soonawg.github.io/ and https://jonbarron.info/.
+- Biography and portrait: https://robinlab-dgist.github.io/team/members/sun-hong-min/
+- Paper: https://arxiv.org/abs/2610.17789
+- Demonstration: https://robinlab-dgist.github.io/images/publications/dexstitch-preview.mp4
+- Video poster: frame from the same public demonstration
 
-DexStitch preview video: https://robinlab-dgist.github.io/images/publications/dexstitch-preview.mp4, linked from the lab publications page: https://robinlab-dgist.github.io/publications/.
-The poster is Figure 1 from the author's paper: https://arxiv.org/pdf/2610.17789.
-
-Profile prose is based on the supplied paper; no degree, current position, or advisor is inferred.
+Only verified public profile and paper information is included. No private repositories are showcased. The stated Spring 2027 role is incoming, not a current enrolled status.
