@@ -37,12 +37,17 @@
     <section aria-labelledby="publications-title">
       <h2 id="publications-title">Publications</h2>
       <article class="publication">
-        <a class="paper-image" href="https://arxiv.org/abs/2610.17789" aria-label="Read DexStitch on arXiv"><img src="./assets/dexstitch.png" alt="DexStitch overview: human videos are segmented, converted into contact-aware robot data, and composed into skill sequences." width="888" height="408"></a>
+        <div class="paper-media">
+          <video id="dexstitch-video" controls muted loop playsinline preload="metadata" poster="./assets/dexstitch.png" aria-label="DexStitch demonstration video">
+            <source src="./assets/dexstitch-preview.mp4" type="video/mp4">
+            <a href="./assets/dexstitch-preview.mp4">Watch the DexStitch demonstration</a>
+          </video>
+        </div>
         <div class="paper-details">
           <h3><a href="https://arxiv.org/abs/2610.17789">DexStitch: Learning and Composing Dexterous Skills from Human Videos via Contact-Aware Robotic Inpainting</a></h3>
           <p class="authors">Byeonggyeol Choi*, Seongmin Jung*, Unghui Nam*, Youngbo Song*, <strong>Sunhong Min*</strong>, MinHyung Lee, Byonghyo Shim, Yongseok Lee</p>
           <p><em>arXiv preprint</em>, 2026</p>
-          <p class="paper-links"><a href="https://arxiv.org/abs/2610.17789">arXiv</a> / <a href="https://arxiv.org/pdf/2610.17789">PDF</a></p>
+          <p class="paper-links"><a href="https://arxiv.org/abs/2610.17789">arXiv</a> / <a href="https://arxiv.org/pdf/2610.17789">PDF</a> / <a href="./assets/dexstitch-preview.mp4">Video</a></p>
           <p class="summary">Learning reusable dexterous skills from human videos by preserving contact during human-to-robot conversion and composing learned skills into sequences.</p>
           <p class="equal">* Equal contribution</p>
         </div>
@@ -50,5 +55,15 @@
     </section>
     <footer>Layout inspired by <a href="https://soonawg.github.io/">Sangwoo Han</a> and <a href="https://jonbarron.info/">Jon Barron</a>.</footer>
   </main>
+  <script>
+    const video = document.getElementById('dexstitch-video');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    function updatePlayback() {
+      if (reducedMotion.matches) { video.pause(); return; }
+      video.play().catch(() => {});
+    }
+    reducedMotion.addEventListener('change', updatePlayback);
+    updatePlayback();
+  </script>
 </body>
 </html>
